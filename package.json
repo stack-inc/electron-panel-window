@@ -11,12 +11,14 @@
     "start": "electron ./test/app/index.js",
     "configure": "node-gyp configure",
     "prepare": "node-gyp build",
-    "build": "node-gyp rebuild --release --target=13.2.2 --dist-url=https://electronjs.org/headers",
+    "rebuild": "electron-rebuild",
+    "build": "node-gyp rebuild --release --target=89.0.0-alpha.3 --dist-url=https://electronjs.org/headers",
     "test": "mocha",
     "install": "node-gyp rebuild"
   },
   "devDependencies": {
-    "electron": "13.2.2",
+    "electron": "18.0.0-alpha.3",
+    "electron-rebuild": "^3.2.7",
     "mocha": "8.2.1",
     "node-gyp": "7.1.2",
     "spectron": "13.0.0"
