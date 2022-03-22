@@ -12,7 +12,7 @@
     "configure": "node-gyp configure",
     "prepare": "node-gyp build",
     "rebuild": "electron-rebuild",
-    "build": "node-gyp rebuild --release --target=89.0.0-alpha.3 --dist-url=https://electronjs.org/headers",
+    "build": "node-gyp rebuild --release --target=18.0.0-alpha.3 --dist-url=https://electronjs.org/headers",
     "test": "mocha",
     "install": "node-gyp rebuild"
   },
